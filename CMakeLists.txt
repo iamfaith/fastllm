@@ -45,7 +45,7 @@ if (PY_API)
     add_subdirectory(${PYBIND})
     add_compile_definitions(PY_API)
     
-    set(Python3_ROOT_DIR "/usr/local/python3.10.6/bin/")
+    set(Python3_ROOT_DIR "/usr/bin/")
     find_package(Python3 REQUIRED)
 
     include_directories(third_party/pybind11/include)
