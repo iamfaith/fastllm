@@ -1,8 +1,8 @@
 
 from transformers import AutoTokenizer, AutoModel
 from fastllm_pytools import llm
-# tokenizer = AutoTokenizer.from_pretrained("chatglm2_6b", trust_remote_code=True)
-tokenizer = AutoTokenizer.from_pretrained("/home/faith/fastllm/chatglm2-6b-int4", trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained("chatglm2_6b", trust_remote_code=True)
+# tokenizer = AutoTokenizer.from_pretrained("/home/faith/fastllm/chatglm2-6b-int4", trust_remote_code=True)
 import time
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"

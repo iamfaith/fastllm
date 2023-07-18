@@ -13,7 +13,6 @@ token
 /pyfastllm/build/
 /pyfastllm/dist/
 /.idea/
-/.vscode/
 /example/Win32Demo/bin/*.*
 /example/Win32Demo/x64
 /example/Win32Demo/*.filters
