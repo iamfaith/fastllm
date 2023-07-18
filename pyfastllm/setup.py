@@ -6,7 +6,7 @@ from setuptools import find_packages
 import sys
 import argparse
 parser = argparse.ArgumentParser(description='build pyfastllm wheel')
-parser.add_argument('--cuda', dest='cuda', action='store_true', default=False,
+parser.add_argument('--cuda', dest='cuda', action='store_true', default=True,
                     help='build with cuda support')
 args, unknown = parser.parse_known_args()
 sys.argv = [sys.argv[0]] + unknown

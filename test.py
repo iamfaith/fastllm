@@ -2,7 +2,7 @@
 from transformers import AutoTokenizer, AutoModel
 from fastllm_pytools import llm
 # tokenizer = AutoTokenizer.from_pretrained("chatglm2_6b", trust_remote_code=True)
-tokenizer = AutoTokenizer.from_pretrained("chatglm2-6b-int4", trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained("/home/faith/fastllm/chatglm2-6b-int4", trust_remote_code=True)
 import time
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
@@ -10,8 +10,8 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 # model = llm.from_hf(model, tokenizer, dtype="float16")  # 可以调整为"float16", "int8", "int4"
 
 
-# model = llm.model("chatglm2-6b-fp16.flm")
-model = llm.model("chatglm2-6b-int4.flm")
+model = llm.model("chatglm2-6b-fp16.flm")
+# model = llm.model("/home/faith/fastllm/chatglm2-6b-int4.flm")
 start = time.time()
 text = "你好,请帮我计算一个数学题:两个苹果加上六个苹果,等于多少个苹果"
 outs = ""

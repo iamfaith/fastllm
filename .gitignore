@@ -1,5 +1,8 @@
 *.log
 *.pyc
+screenlog*
+*.flm
+chatglm2_6b/
 chatglm2-6b-int4*
 token
 /cmake-build-debug/
