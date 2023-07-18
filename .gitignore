@@ -1,5 +1,6 @@
 *.log
 *.pyc
+chatglm2-6b-int4*
 token
 /cmake-build-debug/
 /build-tfacc/
