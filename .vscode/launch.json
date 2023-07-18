@@ -19,10 +19,12 @@
             // "program": "${fileDirname}/../build/refactor/${fileBasenameNoExtension}",
             // "program": "${fileDirname}/../../build/examples/hello/${fileBasenameNoExtension}",
             // "program": "${fileDirname}/../build/tests/test_main",
-            "program": "${fileDirname}/../build/models/${fileBasenameNoExtension}",
+            "program": "${fileDirname}/../../build/${fileBasenameNoExtension}",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
+            // "cwd": "${workspace}",
+            // "cwd": "/home/faith/fastllm/",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
@@ -33,7 +35,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: gcc-7 build active file",
+            // "preLaunchTask": "C/C++: gcc-7 build active file",
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ]

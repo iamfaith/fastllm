@@ -9,6 +9,17 @@ nvcr.io/nvidia/pytorch:23.04-py3
 ```
 
 
+```
+docker run --gpus all \
+-it --rm \
+--ipc=host \
+--ulimit memlock=-1 \
+--ulimit stack=67108864 \
+-v ${PWD}:/home/faith/fastllm \
+nvcr.io/nvidia/pytorch:23.04-py3
+```
+
+
 ``` sh
 cd fastllm
 mkdir build
@@ -18,5 +29,5 @@ make -j16
 cd tools && python setup.py install
 ```
 
-
+for win:
 export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64/:/usr/local/cuda-11.8/targets/x86_64-linux/lib/:/home/faith/miniconda3/lib/python3.9/site-packages/nvidia/cublas/lib/
