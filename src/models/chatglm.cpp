@@ -84,6 +84,7 @@ namespace fastllm {
         // ChatGLMBlock
         int version = GetVersion();
         std::string weightPre, weightMiddle;
+        // call this version
         if (version == 1) {
             weightPre = "transformer.layers.";
             weightMiddle = ".attention";
