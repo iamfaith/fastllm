@@ -8,7 +8,7 @@
 
 struct BenchmarkConfig {
     // std::string path = "chatglm-6b-int4.bin"; // 模型文件路径
-    std::string path = "../chatglm2-6b-int4.flm"; // 模型文件路径
+    std::string path = "/home/faith/fastllm/chatglm2-6b-int4.flm"; // 模型文件路径
     int threads = 4; // 使用的线程数
     int limit = -1; // 输出token数限制，如果 < 0 则代表无限制
     int batch = -1; // batch数, -1时使用文件中的行数作为batch
